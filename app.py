@@ -11,6 +11,12 @@ st.markdown("This project is created for users to input their respective data in
 st.sidebar.image('petrol.png',use_column_width=True)
 page = st.sidebar.selectbox("Select a Page",['Data','Visualization','Report']) 
 
+st.sidebar.text("Custom fuel data")
+
+st.sidebar.radio("/text/")
+st.sidebar.(%0%,%4%)
+st.sidebar.text("")
+
 data = pd.read_csv(petrolpath,parse_dates=['Date'],index_col='Date')
 data.columns = ['city','petrol_price']
 data.rename(lambda col : str(col).lower(), axis ='columns', inplace = True)
